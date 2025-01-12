@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ポケモンサーチアプリ</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <main>
+      <h1>ポケモンサーチアプリ</h1>
+
+      <div class="main-container">
+        <form id="search-form">
+          <label for="search-input">
+            ポケモンの名前(英語表記) or IDを入力してください
+          </label>
+            <input type="text" id="search-input" required>
+          <button type="submit" id="search-button">検索</button>
+        </form>
+
+        <div class="output">
+          <div class="top-container">
+            <div id="name-and-id">
+              <span id="pokemon-name"></span>
+              <span id="pokemon-id"></span>
+            </div>
+            <div id="size">
+              <span id="weight"></span>
+              <span id="height"></span>
+            </div>
+            <div class="sprite-container"></div>
+            <div id="types"></div>
+          </div>
+
+          <div class="bottom-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>ステータス</th>
+                  <th>値</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>HP:</td>
+                  <td id="hp"></td>
+                </tr>
+                <tr>
+                  <td>こうげき:</td>
+                  <td id="attack"></td>
+                </tr>
+                <tr>
+                  <td>ぼうぎょ:</td>
+                  <td id="defense"></td>
+                </tr>
+                <tr>
+                  <td>とくこう:</td>
+                  <td id="special-attack"></td>
+                </tr>
+                <tr>
+                  <td>とくぼう:</td>
+                  <td id="special-defense"></td>
+                </tr>
+                <tr>
+                  <td>すばやさ:</td>
+                  <td id="speed"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
